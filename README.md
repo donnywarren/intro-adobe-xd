@@ -1,94 +1,147 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Talk Template
+# Intro to Adobe XD
 
-Use this template to structure your READMEs for talks. Remove text from this
-section, or use it to frame the talk you are giving. Good framing answers the
-question "Why am I learning this?".
+Out in the real world, developers are given assignments (called tickets) by a
+project manager. If the ticket is to build out a new feature or rebuild an
+existing piece of an application, then it will (hopefully) include a mock-up
+from a designer.
 
-Be sure to include a recent [`LICENSE`](LICENSE) and Markdown linter
-configuration ([`.remarkrc`](.remarkrc)). Also, include an appropriate
-`.gitignore`; these are usually found in specific technology templates, for
-example [js-template](https://www.github.com/ga-wdi-boston/js-template).
+Designers use a lot of different tools to create mock-ups: Photoshop, Sketch,
+Figma, Adobe XD.
+
+Different companies and teams will prefer different tools or sets of tools.
+However, no designer is going to package up everything you need to build out
+their design. Designers are not nice people. Or maybe they're just too busy, who
+knows. Anyway, you will be responsible for exporting the things you need from
+the design file.
 
 ## Prerequisites
 
-- Topics with which developers should be familiar with.
-- Prerequisites are "just-in-time", so if I have a prerequisite that mentions
-  Sass, I would **not** need to include CSS as a prerequisite.
-- [Links to previous materials](https://www.github.com/ga-wdi-boston/example)
-  are often useful.
+- Patience
 
 ## Objectives
 
 By the end of this, developers should be able to:
 
-- Write objectives that focus on demonstrating knowledge.
-- Write learning objectives that begin with an
-  [imperative verb](https://en.wikipedia.org/wiki/Imperative_mood).
-- Avoid objectives that start with "Use" or "Understand".
-- Rewrite objecives that begin with "Use" by inverting sentence structure.
-- End each objective with a period.
-- Write objectives on the whiteboard so they can be referenced during a talk.
+- Navigate around Adobe XD
+- Identify color and font variations in an Adobe XD file
+- Export images and other assets from Adobe XD
 
 ## Preparation
 
-1. Fork and clone this repository.
-   [FAQ](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-1. Create a new branch, `training`, for your work.
-1. Checkout to the `training` branch.
-1. Install dependencies with `npm install`.
+1. [Download Adobe XD](https://www.adobe.com/products/xd.html)
+1. Download the
+   [`sarah-parmenter-travel-app-ui-kit.xd`](https://drive.google.com/drive/folders/1d89lhVfRE-WTTkVmZ27xcuCBWT0KSBKA?usp=sharing)
+   mock-up
+1. Open up the mock in XD
 
-Better preparation instructions may be found as
-[snippets](https://github.com/ga-wdi-boston/instructors/tree/master/snippets).
+## Introduction
 
-It's a good idea to have students do these steps while you're writing objectives
-on the whiteboard.
+We're going to introduce you to Adobe XD and walk through some basic tasks
+you'll need to do as part of your job as a developer including:
 
-## Leading Topic Heading
+1. Navigating through layers
+1. Identifying color and font variations
+1. Exporting assets like images and icons
 
-Here is where the talk begins. If you have not already included framing above,
-it's appropriate to put it here. Link to introductory articles or documentation.
-Motivate the next section.
+Hopefully the designers you work with have good
+[photoshop etiquette](https://photoshopetiquette.com). In our experience, most
+do not. That means that you may have to spend a bit of time getting everything
+you need from a design file. That said, they're all really similar. So once
+you've learned one, you've learned them all.
 
-Demos, exercises, and labs are labelled as such, followed by a colon and a
-description of the activity starting with an
-[imperative verb](https://en.wikipedia.org/wiki/Imperative_mood).
+## Navigating Around XD
 
-## Demo: Write a Demo
+When you first open an Adobe XD file, you should see something that looks like
+this:
 
-Demos are demonstrations, and developers should give their full attention to
-them. It's a great time for them to take notes about important concepts before
-applying them in an exercise.
+![](./assets/xd-home-screen.png)
 
-Demos correspond to the "I do" portion of scaffolding from consultant training.
+There are a couple of pieces to this interface:
 
-## Code-Along: Write an Code-Along
+1. **Artboards:** Each of the blocks in the middle that show a piece of the user
+   interface is an artboard. Designers will use artboards to mock up screens of
+   the application or pieces of the UI. They will (hopefully) also use artboards
+   to provide some context and documentation.
+1. **Assets Panel:** The left side panel has three options: Assets, Layers,
+   and Plugins. Assets and Layers are the only options we'll care about. The
+   Assets Panel lists all the assets in the design: colors, fonts, font styles,
+   components (sometimes also called symbols).
+1. **Configuration Panel:** The right side panel is for configuring the
+   appearance of an element on the page. For us, it's for figuring out how
+   something looks (for our CSS).
+1. **Layer Panel:** An artboard is made up of multiple layers. Each layer is
+   made up of a grouping of elements. Sometimes, you'll need to dig through the
+   layers to find the asset you want. Hopefully you can get there by clicking on
+   it though!
 
-During the code-along, developers should apply concepts covered in the previous
-demo, led by the consultant. This is their first chance to generalize concepts
-introduced. Exercises should be very focused, and flow natural into a lab.
+## Exporting Assets
 
-Exercises correspond to the "We do" portion of scaffolding from consultant
-training.
+Let's focus on this screen:
 
-## Lab: Write a Lab
+![](./assets/exporting-assets.png)
 
-During labs, developers get to demonstrate their understanding of concepts from
-demos and applied knowledge from exercises. Labs are an opportunity for
-developers to build confidence, and also serve as a diagnostic tool for
-consultants to evaluate developer understanding.
+This screen has a header image and an icon that we'll need to export in order to
+include them in our application.
 
-Labs should be timed explicitly using a timer. When estimating the time it will
-take to complete a lab, it is better to overestimate. During labs, consultants
-should circle the room and interact with developers, noting patterns and
-prompting with hints on how to complete the lab. If developers end early, a
-consultant may stop the lab timer. If developers do not finish in time, a
-consultant may give more time at her discretion based on current talk pace, the
-current estimate for the talk, and the importance of completing the lab while
-consultant support is available.
+In XD, we can either export assets one at a time or in batch. Hopefully the
+designer has marked assets for export before us. Know that they probably
+haven't.
 
-Labs correspond to the "You do" portion of scaffolding from consultant training.
+### Export Individual Assets
+
+Click until the asset is selected. You'll know it's selected when it's outlined.
+Having the layer panel open here is helpful too, because the asset will be
+highlighted in the panel if it's selected.
+
+When the asset is selected go to File > Export > Export Selected (or use the
+shortcut: Command + E). This will open the file viewer. Save the file to your
+desktop and move it to your project, or navigate to your project and save it
+there directly.
+
+### Batch Export Assets
+
+XD lets you batch export assets that have been marked for export. First, go
+through the mock and select "Mark for Export" for each asset you want to export.
+You can either do this in the configuration panel on the right or by selecting
+the export icon next to the item in the Layer panel. You can also do this by
+right clicking on the asset and selecting "Mark for Export".
+
+Once you've selected all the assets you want to export, create the export from
+File > Export > Batch (or use the shortcut: Command + Shift + E).
+
+### Export Tips
+
+* When you export, select 'Web' for the "Export For" option
+* Export images as PNG files and icons as SVG
+* If you can export high definition images, do so and use an image optimizer.
+* If the image has some effect on it, export the raw image and apply the affect
+    with CSS, if you can!
+
+## Identifying Colors and Fonts
+
+Adobe XD Makes it pretty easy for us to extract colors and fonts from a design.
+The Asset panel lists all the colors, fonts, and font styles used in a design.
+
+### Getting Colors
+
+To get the hex code for a color, right click on it in the asset panel and select
+"Copy <hex code>".
+
+### Getting Font Styles
+
+Right click on the font style in the Asset panel and select "Highlight on
+Canvas". This will highlight every instance of this font. From there, click on
+any instance of that font style and the right configuration panel will show you:
+the font, font size, font style, letter spacing, line height, after margin,
+color, etc. Put all that info into a CSS class and you're done!
+
+## Conclusion
+
+We've covered everythin you'll need to work with design files. It's up to you to
+come up with a workflow that works for you. You goal is to make it look like the
+mock. It's up to you to figure out the best way to do that!
 
 ## Additional Resources
 
